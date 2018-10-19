@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Project_03.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Pest Exterminator Website</title>
+    <link href="Styles/Site1Master.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <h1><a href="Homepage.aspx"><asp:Label ID="LabelLogo" runat="server" Text="X-Shield"></asp:Label></a></h1>      
+                <asp:Menu ID="MenuMain" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ExterminatorPage.aspx" Text="Exterminator" Value="Exterminator">
+                            <asp:MenuItem NavigateUrl="~/ExterminatorCreate.aspx" Text="Create Pest" Value="Create Pest"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ExterminatorUpdate.aspx" Text="Update Pest" Value="Update Pest"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ExterminatorDelete.aspx" Text="Delete Pest" Value="Delete Pest"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/CustomerPage.aspx" Text="Customer" Value="Customer">
+                            <asp:MenuItem NavigateUrl="~/CustomerCreate.aspx" Text="Create Request" Value="Create Request"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/CustomerUpdate.aspx" Text="Update Request" Value="Update Request"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/CustomerDelete.aspx" Text="Delete Request" Value="Delete Request"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Signup.aspx" Text="Sign up" Value="Sign up"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                                <div class="line"></div>
+            </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer>
+        <!--<p class="footer-small">Created by Signe Frederiksen</p>-->
+    </footer>
+</body>
+</html>
