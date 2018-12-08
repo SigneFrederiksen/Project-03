@@ -76,6 +76,7 @@
     <Content Include="ExterminatorPage.aspx" />
     <Content Include="ExterminatorUpdate.aspx" />
     <Content Include="Homepage.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Pictures\bananflue.jpg" />
     <Content Include="Pictures\bi.jpg" />
     <Content Include="Pictures\ext-bg.jpg" />
@@ -149,6 +150,13 @@
     </Compile>
     <Compile Include="Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Signup.aspx.cs">

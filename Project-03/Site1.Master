@@ -28,6 +28,7 @@
                             <asp:MenuItem NavigateUrl="~/CustomerDelete.aspx" Text="Delete Request" Value="Delete Request"></asp:MenuItem>
                         </asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/Signup.aspx" Text="Sign up" Value="Sign up"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Login" Value="Login"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
                                 <div class="line"></div>
